@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -268,7 +268,7 @@
     <!-- BANNER -->
 
     <section class="banner-section" id="banner">
-      <div class="morphing-button" id="playBtn">
+      <!-- <div class="morphing-button" id="playBtn">
         <span class="play-icon">&#9654;</span>
       </div>
 
@@ -286,9 +286,9 @@
         <span class="close-video" id="closeBtn"
           ><ion-icon name="close-outline"></ion-icon
         ></span>
-      </div>
+      </div> -->
 
-      <div class="banner-left-cl">
+      <div class="banner-content-wrapper">
         <div class="banner-content">
           <h2 class="banner-heading">Furniture 2024 Collections</h2>
           <p class="banner-description">
@@ -299,8 +299,6 @@
           <a href="views/shop.html" class="banner-cta">Shop Now</a>
         </div>
       </div>
-
-      <div class="banner-right-cl"></div>
     </section>
 
     <!-- BANNER END -->
@@ -394,25 +392,27 @@
 
     <!-- SALE SECTION -->
     <section class="promotion-wrapper" id="promotion" data-promoId="">
-      <div class="left-cl">
-        <span class="section-subheading">Special Discount</span>
-        <h2 class="promotion-title">Contemporary Lounge Chair</h2>
-        <p class="promotion-description">
-          Take advantage of our special discount on the Contemporary Lounge
-          Chair, designed for both comfort and style. A perfect addition to any
-          modern living space.
-        </p>
-        <span class="promotion-price">R8076.00</span>
-        <div><button class="btn underline shop-now">Shop Now</button></div>
-      </div>
-      <div class="right-cl">
-        <div class="image-wrapper">
-          <div class="image-card">
-            <img
-              src="public/images/count-down.webp"
-              id="promotion-image"
-              alt="Contemporary Lounge Chair Promotion"
-            />
+      <div class="container">
+        <div class="left-cl">
+          <span class="section-subheading">Special Discount</span>
+          <h2 class="promotion-title">Contemporary Lounge Chair</h2>
+          <p class="promotion-description">
+            Take advantage of our special discount on the Contemporary Lounge
+            Chair, designed for both comfort and style. A perfect addition to
+            any modern living space.
+          </p>
+          <span class="promotion-price">R8076.00</span>
+          <div><button class="btn underline shop-now">Shop Now</button></div>
+        </div>
+        <div class="right-cl">
+          <div class="image-wrapper">
+            <div class="image-card">
+              <img
+                src="public/images/chair_11.webp"
+                id="promotion-image"
+                alt="Contemporary Lounge Chair Promotion"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -423,13 +423,21 @@
     <!-- PARTNER SECTION -->
     <section class="company-partners container" id="company-partners">
       <div class="partners-list">
-        <span class="partner-item">Lorem Inc.</span>
-        <span class="partner-item">Ipsum Ltd.</span>
-        <span class="partner-item">Dolor</span>
-        <span class="partner-item">Amet Tech</span>
-        <span class="partner-item">Consectetur Co.</span>
-        <span class="partner-item">Adipiscing</span>
-        <span class="partner-item">Elit</span>
+        <div class="partner-item">
+          <img src="public/images/partners/logoipsum-1.png" alt="Partner 1" />
+        </div>
+        <div class="partner-item">
+          <img src="public/images/partners/logoipsum-2.png" alt="Partner 2" />
+        </div>
+        <div class="partner-item">
+          <img src="public/images/partners/logoipsum-3.png" alt="Partner 3" />
+        </div>
+        <div class="partner-item">
+          <img src="public/images/partners/logoipsum-4.png" alt="Partner 4" />
+        </div>
+        <div class="partner-item">
+          <img src="public/images/partners/logoipsum-5.png" alt="Partner 5" />
+        </div>
       </div>
     </section>
     <!-- END PARTNER SECTION -->
