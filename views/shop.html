@@ -167,7 +167,18 @@
 
     <!-- MAIN SECTION -->
     <section class="shop-pg main-container container">
+      <div class="sidebar-overlay" data-sidebar-close></div>
       <div class="sidebar">
+        <div class="sidebar-mobile-header">
+          <h3 class="sidebar-header">Filters</h3>
+          <button
+            class="sidebar-close"
+            type="button"
+            aria-label="Close filters"
+          >
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
         <h3 class="sidebar-header">Product category</h3>
         <ul class="filter-category sidebar-filter">
           <!-- CATEGORY -->
@@ -307,6 +318,10 @@
       <!-- MAIN -->
       <div class="main-content">
         <div class="content-filter">
+          <button class="sidebar-toggle-btn" type="button">
+            <ion-icon name="options-outline"></ion-icon>
+            Filters
+          </button>
           <div class="sort-dropdown">
             <div class="select-selected">Default sorting</div>
             <div class="select-items select-hide">

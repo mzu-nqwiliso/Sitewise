@@ -35,6 +35,24 @@ const menu = document.querySelector(".menu-link");
 const closeLoginForm = document.querySelector(".form-close");
 const showLoginForm = document.querySelector(".account");
 const checkoutBtn = document.querySelector(".btn-checkout");
+const sidebarToggleBtn = document.querySelector(".sidebar-toggle-btn");
+const sidebarCloseBtn = document.querySelector(".sidebar-close");
+const sidebarOverlay = document.querySelector(".sidebar-overlay");
+
+const closeShopSidebar = () => {
+  body.classList.remove("show-shop-sidebar");
+};
+
+const openShopSidebar = () => {
+  body.classList.add("show-shop-sidebar");
+  body.classList.remove("show-wishlist");
+  body.classList.remove("show-cart");
+  body.classList.remove("show-loginform");
+  if (menu && menuIcon) {
+    menu.classList.remove("active");
+    menuIcon.name = "menu-outline";
+  }
+};
 
 if (menuCard) {
   menuCard.addEventListener("click", () => {
@@ -107,6 +125,30 @@ if (checkoutBtn) {
     e.preventDefault();
   });
 }
+
+if (sidebarToggleBtn) {
+  sidebarToggleBtn.addEventListener("click", () => {
+    openShopSidebar();
+  });
+}
+
+if (sidebarCloseBtn) {
+  sidebarCloseBtn.addEventListener("click", () => {
+    closeShopSidebar();
+  });
+}
+
+if (sidebarOverlay) {
+  sidebarOverlay.addEventListener("click", () => {
+    closeShopSidebar();
+  });
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeShopSidebar();
+  }
+});
 
 const playBtn = document.querySelector("#playBtn");
 const videoContainer = document.querySelector(".banner-video");
