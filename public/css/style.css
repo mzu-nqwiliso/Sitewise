@@ -3161,18 +3161,6 @@ body.show-shop-sidebar {
     width: 360px;
   }
 
-  .banner-content h2 {
-    font-size: var(--fs-medium);
-  }
-
-  .banner-section p {
-    padding-block: 1rem;
-  }
-
-  .banner-section {
-    display: none;
-  }
-
   .product-collection {
     margin-top: 2rem;
     padding-bottom: 1rem;
@@ -3998,6 +3986,29 @@ body.show-shop-sidebar {
     text-align: start;
   }
 
+  /*  BANNER  */
+
+  .banner-section {
+    height: 60vh;
+    padding-block: 2rem;
+  }
+
+  .banner-section .banner-content {
+    width: 80%;
+    gap: 0.75rem;
+    left: 12.5%;
+  }
+
+  .banner-content h2 {
+    line-height: 1.2;
+    font-size: var(--fs-xl);
+  }
+
+  .banner-content p {
+    font-size: var(--fs-xsm);
+    line-height: 1.2;
+  }
+
   .promotion-wrapper {
     height: auto;
   }
@@ -4046,6 +4057,25 @@ body.show-shop-sidebar {
 
   .image-list .image-card {
     width: 100%;
+  }
+
+  /* Checkout */
+
+  .checkout-pg .billing-form {
+    padding-right: 0;
+  }
+  .checkout-pg .form-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .checkout-pg .form-control {
+    width: 100%;
+    margin-block: 0;
+    margin-bottom: 0.5rem;
   }
 
   /* about */
